@@ -5,58 +5,39 @@
 #  - For a successful replication, it shoudl be prefixed with "[Re]"
 #  - For a failed replication, it should be prefixed with "[¬Re]"
 #  - For other article types, no instruction (but please, not too long)
-title: "ReScience (R)evolution"
+title: "[Re] The principal components of natural images"
 
 # List of authors with name, orcid number, email and affiliation
 # Affiliation "*" means contact author (required even for single-authored papers)
 authors:
-  - name: Konrad Hinsen
-    orcid: 0000-0003-0330-9428
-    email: konrad.hinsen@cnrs.fr
-    affiliations: 1,2
+  - name: Iain Davies
+    orcid: ?
+    email: id318@cam.c.uk
+    affiliations: 1, *
     
-  - name: Nicolas P. Rougier
-    orcid: 0000-0002-6972-589X
-    email: Nicolas.Rougier@inria.fr
-    affiliations: 3,4,5,*      # * is for contact author
+  - name: Stephen Eglen
+    orcid: ???
+    email: sje30@cam.ac.uk
+    affiliations: 1
 
 # List of affiliations with code (corresponding to author affiliations), name
 # and address. You can also use these affiliations to add text such as "Equal
 # contributions" as name (with no address).
 affiliations:
   - code:    1
-    name:    Centre de Biophysique Moléculaire, CNRS UPR4301
-    address: Orléans, France
-    
-  - code:    2
-    name:    Synchrotron SOLEIL, Division Expériences
-    address: Gif sur Yvette, France
-    
-  - code:    3
-    name:    INRIA Bordeaux Sud-Ouest
-    address: Bordeaux, France
-    
-  - code:    4
-    name:    LaBRI, Université de Bordeaux, Institut Polytechnique de Bordeaux,
-             Centre National de la Recherche Scientifique, UMR 5800
-    address: Talence, France
-    
-  - code:    5
-    name:    Institut des Maladies Neurodégénératives, Université  de Bordeaux,
-             Centre National de la Recherche Scientifique, UMR 5293
-    address: Bordeaux, France
-
+    name:    Department of Applied Mathematics and Theoretical Physics, Cambridge University
+    address: Cambridge, UK
 
 # List of keywords (adding the programming language might be a good idea)
-keywords: rescience c, rescience x
+keywords: PCA, principal component analysis, MATLAB, V1, natural images, visual cortex
 
 # Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
 # You can get a DOI for your code from Zenodo, or an SWH identifier from
 # Software Heritage.
 #   see https://guides.github.com/activities/citable-code/
 code:
-  - url: https://github.com/rescience-c/template
-  - doi: 
+  - url: https://github.com/IainDaviesMaths/Reproduction-Hancock.git
+  - doi:  
   - swh: 
 
 # Data URL and DOI (optional if no data)
@@ -66,22 +47,23 @@ data:
 
 # Information about the original article that has been replicated
 replication:
- - cite: # Full textual citation
+ - cite: Hancock, P. et al, 1991 The Principal Components of Natural Images
  - bib:  # Bibtex key (if any) in your bibliography file
- - url:  # URL to the PDF, try to link to a non-paywall version
+ - url:  http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=044DFF560FC2E801B579C2F23D268B44?doi=10.1.1.41.192&rep=rep1&type=pdf
  - doi:  # Regular digital object identifier
 
 # Don't forget to surround abstract with double quotes
-abstract: "Three years have passed since ReScience published its first article
-           and since September 2015, things have been going steadily. We're
-           still alive, independent and without a budget. In the meantime, we
-           have published around 20 articles (mostly in computational
-           neuroscience & computational ecology) and the initial has grown
-           from around 10 to roughly 100 members (editors and reviewers), we
-           have advertised ReScience at several conferences worldwide, gave
-           some interviews and we published an article introducing ReScience in
-           PeerJ. Based on our experience at managing the journal during these
-           three years, we think the time is ripe for proposing some changes."
+abstract: "The visual cortex has long been the subject of study for computational
+           neuroscientists. Various neural network techniques have been applied
+           in attempts to recreate the receptive fields found experimentally in
+           visual cortex cells. In 1991 Hancock et al used an algorithm designed
+           by Sanger in 1989 to perform Principal Component Analysis on a series
+           of natural greyscale images, which replicated some features of 
+           receptive fields found in the V1 of cats, although they noted that 
+           many of the complex principal components were not found. Moreover,
+           they showed that Sanger's algorithm was able to find distinguishing 
+           features in text images as well as natural images, an important find in
+           the study of neural networks."
 
 # Bibliography file (yours)
 bibliography: bibliography.bib
@@ -91,14 +73,14 @@ bibliography: bibliography.bib
 #  * Editorial
 #  * Letter
 #  * Replication
-type: Editorial
+type: Replication
 
 # Scientific domain of the article (e.g. Computational Neuroscience)
 #  (one domain only & try to be not overly specific)
-domain: 
+domain: Computational Neuroscience
 
 # Coding language (main one only if several)
-language:
+language: MATLAB
 
   
 # To be filled by the author(s) after acceptance
