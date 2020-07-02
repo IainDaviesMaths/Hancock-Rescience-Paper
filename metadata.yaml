@@ -11,12 +11,12 @@ title: "[Re] The principal components of natural images"
 # Affiliation "*" means contact author (required even for single-authored papers)
 authors:
   - name: Iain Davies
-    orcid: ?
+    orcid: 0000-0002-5361-6285
     email: id318@cam.c.uk
     affiliations: 1, *
     
   - name: Stephen Eglen
-    orcid: ???
+    orcid: 0000-0001-8607-8025
     email: sje30@cam.ac.uk
     affiliations: 1
 
@@ -50,7 +50,7 @@ replication:
  - cite: Hancock, P. et al, 1991 The Principal Components of Natural Images
  - bib:  # Bibtex key (if any) in your bibliography file
  - url:  http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=044DFF560FC2E801B579C2F23D268B44?doi=10.1.1.41.192&rep=rep1&type=pdf
- - doi:  # Regular digital object identifier
+ - doi:  10.1088/0954-898X/3/1/008
 
 # Don't forget to surround abstract with double quotes
 abstract: "The visual cortex has long been the subject of study for computational
