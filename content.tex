@@ -2,7 +2,7 @@
 
 Understanding the visual cortex and how patterns in images are interpreted in the brain has long been a goal of computational neuroscience. This article re-examines an early paper in the development of this field by Hancock et al. 1991 ~\cite{Hancock}. 
 The aim of their paper is to use neural networks to perform Principal Component Analysis (PCA) on images. This technique finds a small set of linear descriptors that convey the most information about a set of images. The extremely high dimensional data from the images is projected onto a much smaller number of orthogonal axes which produce the most variation amongst the images. To do this exactly requires finding the eigenvectors of the correlation matrix of the input data. However this matrix was considered too large at the time (1991) to compute. The paper applies neural network methods to solve this problem in a viable number of computations. Sanger's algorithm \cite{Sanger} is used to produce receptive fields that converge to the principal components (PCs).\\
-Hancock et al. showed that the receptive fields can detect features such as orientation in natural images and gaps between words in text images. The simplest of these receptive fields have also been found experimentally in the V1 cells of cats ~\cite{Orban}.
+Hancock et al. showed that the receptive fields can detect features such as orientation in natural images and gaps between words in text images. The simplest of these receptive fields have also been found experimentally in the V1 cells of cats ~\cite{Hubel1962-fp}.
 
 \section{Methods}
 
