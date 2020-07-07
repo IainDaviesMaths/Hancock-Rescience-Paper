@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber article"] 1594041079 "article.bcf" "article.bbl" "article" 1594041088
-  "article.bcf" 1594041087 90632 67ef59f59f9cd0c73a10459a4945db02 ""
-  "bibliography.bib" 1594040966 996 bd8def936d64be58c2deb35149e13af3 ""
+["biber article"] 1594114122 "article.bcf" "article.bbl" "article" 1594114132
+  "article.bcf" 1594114131 90783 669b454d56fe17063e6dc6deacb57706 ""
+  "bibliography.bib" 1594114022 3343 5aaa39003f141e8c9a1715609561eef3 ""
   (generated)
-  "article.bbl"
   "article.blg"
-["pdflatex"] 1594041084 "article.tex" "article.pdf" "article" 1594041088
+  "article.bbl"
+["pdflatex"] 1594114128 "article.tex" "article.pdf" "article" 1594114132
   "/alt/applic/texmf-ubuntu/tex/generic/pgf/basiclayer/pgfcore.code.tex" 1438962480 1006 b103be0bfc8c1682ff1fa9760697a329 ""
   "/alt/applic/texmf-ubuntu/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex" 1438962480 43226 167a99346bfe2676e3efcdde2d81fe45 ""
   "/alt/applic/texmf-ubuntu/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex" 1438962480 19302 4f089dc590e71f7331e6d5b5ea85273b ""
@@ -196,12 +196,12 @@
   "/usr/share/texmf/tex/latex/tipa/t3enc.def" 1414244106 26483 c461a68c34040cb0d96c43e86c012a6d ""
   "/usr/share/texmf/web2c/texmf.cnf" 1503343927 31343 93828589fb0cea665e553ee5a17ad2d4 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1583893482 2654205 38c2c1f6dd51745f17e5cc662e536192 ""
-  "article.aux" 1594041087 7357 c4ccab3e21a0f6f9143772670cda4071 ""
-  "article.bbl" 1594041080 3707 dadc598816f5bf784c0a0f65ae1a6f44 "biber article"
-  "article.out" 1594041087 866 dc768c117de6a97221fd6493a77d93f8 ""
-  "article.run.xml" 1594041087 2395 5583410d8fbe3089ea6003ac69838358 ""
+  "article.aux" 1594114131 7372 8c1dfb46ced0e82ee30b101462c81cd9 ""
+  "article.bbl" 1594114124 5996 1e548f5e8b65e2d7c24f396fb3f35865 "biber article"
+  "article.out" 1594114131 866 dc768c117de6a97221fd6493a77d93f8 ""
+  "article.run.xml" 1594114131 2395 5583410d8fbe3089ea6003ac69838358 ""
   "article.tex" 1593687223 281 519f8a57bbfacef586c41f20cbe0c13b ""
-  "content.tex" 1594040966 15310 139bd1f48132e5742fa89295826193ed ""
+  "content.tex" 1594114114 15461 0e9c49dcc52aa22f6bc4c5b1e4f13334 ""
   "figures/Figure1.png" 1594040966 760455 8f95ce8773f72fc3d74ca47d6002db98 ""
   "figures/Figure2.png" 1594040966 54302 42287207a3d92e17475e353d54a985bc ""
   "figures/Figure3.png" 1594040966 55464 36733ad063aff6cfd9f99779c8bfa599 ""
@@ -214,9 +214,9 @@
   "metadata.tex" 1594041070 2369 fa5a8d2f801231d5d6cb783b64c6bfee ""
   "rescience.cls" 1593686440 10491 d898b7fe6fbd9dc31de870ea69376000 ""
   (generated)
-  "article.aux"
-  "article.bcf"
   "article.run.xml"
+  "article.aux"
   "article.log"
-  "article.pdf"
   "article.out"
+  "article.bcf"
+  "article.pdf"
