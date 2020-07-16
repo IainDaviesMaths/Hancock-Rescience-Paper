@@ -49,8 +49,13 @@ Finally, Hancock et al. show how the 7th PC of the finest scale images is tuned 
 \subsection{Re-Implementation of Experiments}
 
 Neither the original source code nor the original text images could be obtained, however the original natural images were obtained from the original authors, and are available at: \url{http://pics.stir.ac.uk/} in the collection entitled
-``PCA Images''. The model re-implementation was written in MATLAB using Sanger's algorithm and the presentation of images as described in the original paper.\\
-For the rotation experiment, Hancock et al. rotate the natural images in a scanner and use the resulting images. Instead of doing this in the re-implementation, samples of the non-rotated images were chosen and then rotated using the MATLAB function "imrotate".\\
+``PCA Images''. We first re-implemented the model in Matlab.  We then converted the code to
+run in Julia; this process was relatively easy given that only minor
+edits were required to the code.  The resulting Julia code takes about
+five minutes to run all computations for this paper (on a modern i5
+laptop).  We have also provided a mybinder image at:
+\url{https://mybinder.org/v2/gh/sje30/Reproduction-Hancock/master}.\\
+The model re-implementation used Sanger's algorithm and the presentation of images as described in the original paper except in the rotation experiment. For the rotation experiment, Hancock et al. rotate the natural images in a scanner and use the resulting images. Instead, in the reimplementation samples of the non-rotated images were chosen and then rotated using the MATLAB/Julia function "imrotate".\\
 For the reproduction of the text image experiments a new text image was created by one of us (ID). This was done by copy-and-pasting text into a Word Document and editing it so it had similar features to the original text images. This included adding large whitespaces and finding a similar font. This was then converted into a PNG file and random sections of it at different scales were used as input to Sanger's algorithm to produce Figures 6 and 7 below. 
 
 \subsection{Results}
@@ -60,26 +65,26 @@ All of the main features of Figures 2-8 in ~\cite{Hancock1992-mp} were reproduce
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.4]{figures/Figure1.png}
+    \includegraphics[scale=0.2]{figures/julia-fig1.png}
     \caption{The original 15 natural images labelled images 1-15.}
     \label{fig:Figure1}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.55]{figures/Figure2.png}
+    \includegraphics[scale=0.75]{figures/julia-fig2.png}
     \caption{Reproduction of the principal components of 15 natural images, numbered from top to bottom, left to right.}
     \label{fig:Figure2}
 \end{figure}
 \begin{figure}
     \centering
-    \includegraphics[scale=0.55]{figures/Figure3.png}
+    \includegraphics[scale=0.75]{figures/julia-fig3.png}
     \caption{The principal components of 40 natural images.}
     \label{fig:Figure3}
 \end{figure}
 \begin{figure}
     \centering
-    \includegraphics[scale=0.55]{figures/Figure4.png}
+    \includegraphics[scale=0.75]{figures/julia-fig4.png}
     \caption{Reproduction of the orientation experiment: the principal components of 15 natural images rotated by 45 degrees.}
     \label{fig:Figure4}
 \end{figure}
@@ -92,14 +97,14 @@ Figure~\ref{fig:Figure5} displays the reproduction of the variance experiment. T
  The scale experiment on natural images is reproduced in Figure~\ref{fig:Figure6}. The first 6 PCs at half the scale and at double the scale are displayed. These match those of ~\cite{Hancock1992-mp} exactly apart from the ordering of the final two PCs at half the scale. They are also very similar to the PCs at the original scale, confirming the lack of scale dependence of correlations in natural images.\\
 \begin{figure}
     \centering
-    \includegraphics[scale=0.55]{figures/Figure5.png}
+    \includegraphics[scale=0.55]{figures/julia-fig5.png}
     \caption{Reproduction of the variance experiment: a log-log plot of output variance against PC number for (a) 15 natural images, (b) 40 natural images.}
     \label{fig:Figure5}
 \end{figure}
 
  \begin{figure}
     \centering
-    \includegraphics[scale=0.55]{figures/Figure6.png}
+    \includegraphics[scale=0.37]{figures/julia-fig6.png}
     \caption{Reproduction of the scale experiment for natural images: the principal components of 15 natural images at (a) double the scale, (b) half the scale.}
     \label{fig:Figure6}
 \end{figure}
@@ -110,14 +115,14 @@ The reproduced scale experiment on text images is found in Figure~\ref{fig:Figur
 Figure~\ref{fig:Figure8} displays the convolution of the 5th PC at the finest scale with the full text image, which is then thresholded and superimposed over the text image. As found in ~\cite{Hancock1992-mp}, this marks gaps between words. For this to be reproduced, further experimental modifications had to be made to the text image. Text with no large whitespace or font that was too thin failed to produce a PC that corresponded to word spacings. As mentioned above, when such a PC could be produced it was the 5th PC not the 7th as in ~\cite{Hancock1992-mp}. 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.55]{figures/Figure7.png}
+    \includegraphics[scale=0.34]{figures/julia-fig7.png}
     \caption{Reproduction of the scale experiment for text images: samples of text and their principal components at (a) double, (b) original, (c) half scale.}
     \label{fig:Figure7}
 \end{figure}
 \begin{figure}
     \centering
-    \includegraphics[scale=0.55]{figures/Figure8.png}
-    \caption{Reproduction of the convolution experiment: (a) The full text image. (b) The text image convolved with PC 5 from Figure 6(a). (c) The convolution thresholded and superimposed over the text image.}
+    \includegraphics[scale=0.15]{figures/julia-fig8.png}
+    \caption{Reproduction of the convolution experiment: Left: The full text image. Middle: The text image convolved with PC 5 from Figure 6(a). Right: The convolution thresholded and superimposed over the text image.}
     \label{fig:Figure8}
 \end{figure}
 
