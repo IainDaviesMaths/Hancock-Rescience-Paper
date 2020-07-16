@@ -124,3 +124,10 @@ Figure~\ref{fig:Figure8} displays the convolution of the 5th PC at the finest sc
 \section{Conclusion}
 Our re-implementation of Principal Component Analysis using Sanger's algorithm from Hancock et al. 1991 was successful in reproducing the main results and most principal components from the original paper. The main results concerning orientation dependence (Figure~\ref{fig:Figure4}), variance (Figure~\ref{fig:Figure5}) and scale dependence (Figure \ref{fig:Figure6} and Figure~\ref{fig:Figure7}) in ~\cite{Hancock1992-mp} are reproduced well. The primary principal components are reproduced in all experiments and although there are differences in the latter principal components of text images, the re-implementation was able to extract a PC that marked word gaps (Figure~\ref{fig:Figure8}).\\
 The description of the model in the original paper was clear and was sufficient to write a re-implementation without the source code. All model parameters are stated clearly and the method of preparing the input image samples was simple to follow. Obtaining the original natural images also allowed for results to be reproduced easily and faithfully. The main difficulty in reproduction was the creation of a new text image that recreated the desired principal components. This required some trial and error as the principal components are sensitive to font and features in the text suggesting that some of the results in ~\cite{Hancock1992-mp} are particular to the images used.
+
+\section{Acknowledgements}
+This work was financially supported by a mini science grant to CODECHECK
+from the Mozilla foundation.  ID was also financially supported by the
+Faculty of Mathematics at Cambridge.  We thank Professors Peter Hancock
+and Leslie Smith at the University of Stirling for providing their
+image database.
