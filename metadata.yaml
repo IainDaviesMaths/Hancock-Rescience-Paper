@@ -80,7 +80,7 @@ type: Replication
 domain: Computational Neuroscience
 
 # Coding language (main one only if several)
-language: MATLAB
+language: Julia
 
   
 # To be filled by the author(s) after acceptance
