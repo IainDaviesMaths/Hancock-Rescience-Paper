@@ -345,6 +345,7 @@ INPUT figures/julia-fig5.png
 INPUT figures/julia-fig6.png
 INPUT figures/julia-fig7.png
 INPUT figures/julia-fig8.png
+INPUT figures/julia-fig9.png
 INPUT article.aux
 INPUT article.run.xml
 OUTPUT article.run.xml
