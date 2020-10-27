@@ -37,7 +37,7 @@ keywords: PCA, principal component analysis, MATLAB, V1, natural images, visual 
 #   see https://guides.github.com/activities/citable-code/
 code:
   - url: https://github.com/IainDaviesMaths/Reproduction-Hancock.git
-  - doi:  
+  - doi: 10.5281/zenodo.4139727
   - swh: 
 
 # Data URL and DOI (optional if no data)
